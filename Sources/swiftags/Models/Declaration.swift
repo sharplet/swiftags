@@ -11,6 +11,22 @@ struct Declaration {
     case instanceVariable = "source.lang.swift.decl.var.instance"
     case staticVariable = "source.lang.swift.decl.var.static"
     case globalVariable = "source.lang.swift.decl.var.global"
+
+    var ctagsKind: Character {
+      switch self {
+      case .class:            return "c"
+      case .struct:           return "s"
+      case .enum:             return "e"
+      case .protocol:         return "P"
+      case .extension:        return "E"
+      case .freeFunction:     return "f"
+      case .instanceMethod:   return "m"
+      case .staticMethod:     return "M"
+      case .instanceVariable: return "v"
+      case .staticVariable:   return "V"
+      case .globalVariable:   return "g"
+      }
+    }
   }
 
   let kind: Kind

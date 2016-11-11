@@ -44,5 +44,5 @@ print("!_TAG_FILE_SORTED", 1, "/0=unsorted, 1=sorted, 2=foldcase/", separator: "
 for declaration in allDeclarations.sorted(by: { $0.name < $1.name }) {
   guard let parsedDeclaration = declaration.parsedDeclaration?.firstLine else { continue }
   let excmd = "/\(parsedDeclaration)/;\""
-  print(declaration.name, declaration.file, excmd, separator: "\t", to: &tagFile)
+  print(declaration.name, declaration.file, excmd, declaration.kind.ctagsKind, separator: "\t", to: &tagFile)
 }
