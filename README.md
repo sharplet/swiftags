@@ -19,6 +19,9 @@ Generate ctags for Swift projects using [SourceKitten][].
 ## Contributing
 
 swiftags is currently a proof of concept. Contributions are welcome!
+The [issue list][issues] is a good place to start.
+
+  [issues]: https://github.com/sharplet/swiftags/issues
 
 ## License
 
