@@ -16,6 +16,10 @@ Generate ctags for Swift projects using [SourceKitten][].
     swift build
     swiftags --spm-module my-spm-project    # creates ./tags
 
+## Contributing
+
+swiftags is currently a proof of concept. Contributions are welcome!
+
 ## License
 
 swiftags is copyright © 2016 Adam Sharp. It is free software,
